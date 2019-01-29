@@ -1,0 +1,20 @@
+﻿<Window x:Class="资源搜索神器.AddTypeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:资源搜索神器"
+        mc:Ignorable="d"
+        Title="添加类型" Height="400" Width="320">
+    <Grid>
+        <Label Content="名称：" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Height="30" Width="60" FontSize="16"/>
+        <Label Content="资源地址匹配正则：" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Height="30" Width="223" FontSize="16"/>
+        <Label Content="验证是否失效正则（资源指向网页&#xD;&#xA;中匹配则已失效，不填则不匹配）：" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Height="50" Width="274" FontSize="16"/>
+        <Label Content="密码匹配正则（不匹配则为空，密码&#xA;写在第一个括号内，如：密?提?取?&#xA;码：?:?\s*([a-zA-Z0-9]{4}) ）：" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Height="70" Width="274" FontSize="16"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="23" Margin="30,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254" FontSize="16"/>
+        <TextBox x:Name="AddressRegex" HorizontalAlignment="Left" Height="23" Margin="30,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254" FontSize="16"/>
+        <TextBox x:Name="pwRegex" HorizontalAlignment="Left" Height="23" Margin="30,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254" FontSize="16"/>
+        <TextBox x:Name="verifyRegex" HorizontalAlignment="Left" Height="23" Margin="30,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="254" FontSize="16"/>
+        <Button x:Name="AddButton" Content="添加" HorizontalAlignment="Left" Margin="100,324,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="Add"/>
+    </Grid>
+</Window>
